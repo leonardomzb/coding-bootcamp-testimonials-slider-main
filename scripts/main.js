@@ -10,8 +10,6 @@ const nextButtonEl = document.getElementById('quote-section__next-button');
 const quoteSectionEl = document.getElementById('quote-section');
 const nav_buttonsEl = document.getElementById('nav_buttons');
 
-getQuoteData('0');
-
 nextButtonEl.addEventListener('click', () => { 
   switchQuote(quotes.length - 1, 0,  1);
 });
