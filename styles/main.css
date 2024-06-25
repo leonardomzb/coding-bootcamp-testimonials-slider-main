@@ -94,7 +94,7 @@ blockquote footer{
   cursor: pointer;
 }
 
-.nav_buttons button:focus,
+.nav_buttons button:focus-visible,
 .nav_buttons button:hover{
   background-color: hsl(240, 18%, 77%, 40%);
   transition: .3s;
@@ -112,6 +112,17 @@ blockquote footer{
   border-radius: 0 30px 30px 0;
 }
 
+.sr-only {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
 
 @media (max-width: 1230px) {
   body {
